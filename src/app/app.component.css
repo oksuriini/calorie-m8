@@ -1,0 +1,42 @@
+.inner-wrapper {
+  display: flex;
+  flex-direction: column;
+  border: 1px red solid;
+  height: 99vh;
+  width: 66vw;
+  align-items: stretch;
+  @media screen and (max-width: 600px) {
+    width: 99vw;
+  }
+}
+
+.title {
+  margin: 0;
+  padding: 0;
+  background: #4a4e4d;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 3rem;
+  font: "Jura", sans-serif;
+  justify-items: center;
+  flex-basis: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @media screen and (max-width: 350px) {
+    font-size: 2.5rem;
+  }
+}
+
+.navbar {
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: space-evenly;
+  background: #fdf498;
+  color: #4a4e4d;
+  flex-basis: 5%;
+}
+.content {
+  background: #be9b7b;
+  flex-basis: 80%;
+}

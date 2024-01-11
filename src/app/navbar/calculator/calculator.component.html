@@ -1,0 +1,20 @@
+<div class="calculator-wrapper">
+  <h3>Calculator:</h3>
+  <form [formGroup]="calorieForm" (change)="handleForm()">
+    <label for="kcal">You target calories:</label>
+    <input
+      type="number"
+      name="calInput"
+      placeholder="kcal"
+      formControlName="calorieTarget"
+    />
+    <p>{{ calorieTarget }}</p>
+  </form>
+  <div *ngFor="let in of counterCount(counter)">lol</div>
+  <div>
+    <button type="button" (click)="addToCounter()">Add Item</button>
+    <div *ngIf="counterIsMoreThanOne()" type="button">
+      <button type="button" (click)="removeFromCounter()">Remove Item</button>
+    </div>
+  </div>
+</div>
