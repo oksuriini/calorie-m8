@@ -1,0 +1,7 @@
+<div>
+  <select name="foods" id="foods">
+    <option *ngFor="let option of getOptions()" value="{{ option.name }}">
+      {{ option.name }}
+    </option>
+  </select>
+</div>

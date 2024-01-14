@@ -10,7 +10,9 @@
     />
     <p>{{ calorieTarget }}</p>
   </form>
-  <div *ngFor="let in of counterCount(counter)">lol</div>
+  <div *ngFor="let in of counterCount(counter)">
+    <app-dropdown></app-dropdown>
+  </div>
   <div>
     <button type="button" (click)="addToCounter()">Add Item</button>
     <div *ngIf="counterIsMoreThanOne()" type="button">
